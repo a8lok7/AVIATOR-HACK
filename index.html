@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>AKT SASUKEE - Aviator AI</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="logo-container">
+    <img src="logo.jpg" alt="AKT BOSS Logo" class="logo" />
+    <h1>AKT SASUKEE</h1>
+  </div>
+
+  <div id="key-panel">
+    <h2>Enter Access Key</h2>
+    <input type="text" id="accessKey" placeholder="Enter Key..." />
+    <button onclick="validateKey()">Enter</button>
+    <p id="error" class="error"></p>
+  </div>
+
+  <div id="main-panel" style="display:none;">
+    <h2>AI Crash Prediction</h2>
+    <button onclick="generatePrediction()">Predict</button>
+    <p id="predictionOutput"></p>
+
+    <h3>Crash History</h3>
+    <ul id="historyList"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
